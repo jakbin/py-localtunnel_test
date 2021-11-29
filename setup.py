@@ -1,5 +1,5 @@
 import setuptools
-from py_localtunnel.main import __version__
+from py_localtunnel.cli import __version__
 
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
