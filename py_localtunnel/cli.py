@@ -1,7 +1,4 @@
 import argparse
-import os
-from pathlib import Path
-from requests import get, post, ConnectionError, head
 
 __version__ = "1.0.0"
 package_name = "pylt"
@@ -27,7 +24,7 @@ def main(argv = None):
     if args.command == "port":
         return print(args.port)
     elif args.command == "d":
-        return download(args.filename, args.path)
+        return print(args.filename, args.path)
     elif args.version:
         return print(__version__)
     else:
